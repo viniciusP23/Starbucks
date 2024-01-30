@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Starbucks</title>
+</head>
+<body>
+
+    <div class="circulo"></div>
+
+    <img class="logo" src="imagem/logo.png" alt="logo">
+
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h2>Não é apenas café, é <span>Starbucks</span></h2>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque at temporibus facilis commodi quam iure 
+            consectetur molestias architecto officia, optio, quia qui nisi expedita quasi illo necessitatibus iusto perspiciatis eos!</p>
+
+            <button>Deixe seu like!</button>
+
+        </div>
+
+        <div class="caixa-imagem">
+            <img class="starbucks" src="imagem/img1.png" alt="copo grande">
+        </div>
+
+    </div>
+
+    <div class="menu">
+        <img class="copo-pequeno verde" src="imagem/img-pequena1.png" >
+        <img class="copo-pequeno amarelo" src="imagem/img-pequena2.png" >
+        <img class="copo-pequeno rosa" src="imagem/img-pequena3.png" >
+    </div>
+    
+</body>
+
+<script>
+    let circulo = document.querySelector('.circulo')
+    let imgCopo = document.querySelector('.starbucks')
+    let verde = document.querySelector('.verde')
+    let amarelo = document.querySelector('.amarelo')
+    let rosa = document.querySelector('.rosa')
+    let text = document.querySelector('span')
+    let botao = document.querySelector('button')
+
+
+    amarelo.addEventListener('click', () => {
+        imgCopo.src = './imagem/img2.png'
+        circulo.style.background = '#eb7495'
+        text.style.color = '#eb7495'
+        botao.style.background = '#eb7495'
+    })
+
+    verde.addEventListener('click', () => {
+        imgCopo.src = './imagem/img1.png'
+        circulo.style.background = '#017143'
+        text.style.color = '#017143'
+        botao.style.background = '#017143'
+    })
+
+    rosa.addEventListener('click', () => {
+        imgCopo.src = './imagem/img3.png'
+        circulo.style.background = '#c93aa0'
+        text.style.color = '#c93aa0'
+        botao.style.background = '#c93aa0'
+    })
+
+
+
+</script>
+
+</html>
